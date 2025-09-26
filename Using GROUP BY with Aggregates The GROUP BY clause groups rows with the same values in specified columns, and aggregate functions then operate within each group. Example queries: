@@ -1,0 +1,24 @@
+SUM with GROUP BY:
+
+text
+SELECT Department, SUM(Salary) AS TotalSalaries
+FROM Employees
+GROUP BY Department;
+This query returns each department with the total salary for that group.
+
+COUNT with GROUP BY:
+
+text
+SELECT Country, COUNT(*) AS NumberOfEmployees
+FROM Employees
+GROUP BY Country;
+This finds out how many employees come from each country.
+
+AVG with GROUP BY and WHERE:
+
+text
+SELECT Department, AVG(Salary) AS AverageSalary
+FROM Employees
+WHERE Status = 'Active'
+GROUP BY Department;
+This returns the average salary by department for only active employees.
