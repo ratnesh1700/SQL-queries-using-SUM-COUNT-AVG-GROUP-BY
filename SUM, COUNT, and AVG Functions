@@ -1,0 +1,21 @@
+SUM(column_name): Calculates the total sum of a numeric column. For example:
+
+text
+SELECT SUM(Salary)
+FROM Employees;
+This returns the total salary across all employees.
+
+*COUNT(column_name or ): Counts how many rows (or non-null column values) exist. For example:
+
+text
+SELECT COUNT(*)
+FROM Employees;
+This returns the number of employees.
+
+AVG(column_name): Computes the average value of a numeric column. For example:
+
+text
+SELECT AVG(Salary)
+FROM Employees;
+This returns the average salary.
+
